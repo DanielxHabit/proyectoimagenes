@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pa' Donde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>	
+<link rel="stylesheet" type="text/css" href="estilores.css" >
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"/>	
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/leaflet-extra-markers@1.0.6/dist/css/leaflet.extra-markers.min.css"/>
+<link rel="stylesheet" type="text/css" href="atlanta.css"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<input type="checkbox" id="menu" />
+<label for="menu" class="menu">
+	<span></span>
+	<span></span>
+	<span></span>
+</label>
+
+<nav class="nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="restaurantes.html">Restaurantes</a></li>
+		<li><a href="entretenimiento.html">Entretenimiento</a></li>
+		<li><a href="Carousel.html">Galeria</a></li>
+	</ul>
+</nav>
+
+
+<main>
+	<div class ="logo">
+	<header>
+		<h1><img src="../img/Logotipo Restaurante Crema (1).png" alt="Logotipo"></h1>
+	</header>
+</div>
+
+	<section>
+		<div class="container">
+			<div class="projcard projcard-red">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/RestauranteCatrinasPoolBar?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/catrina.jpg" />
+                  </a>
+                  <div class="projcard-textbox">
+                    <div class="projcard-title">Restaurante Catrinas Pool & Restaurant</div>
+                    <div class="projcard-subtitle">Ven y gasta todo tu dinero</div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description">¡Si estás buscando deliciosa comida y vivir una bonita experiencia, Catrina’s es tu mejor opción!</div>
+                    <div class="projcard-tagbox">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projcard projcard-green">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/Elmarinerosps?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/marinero.png" />
+                  </a>
+                  <div class="projcard-textbox">
+                    <div class="projcard-title">Restaurante El Marinero</div>
+                    <div class="projcard-subtitle">¡Bienvenido a bordo de El Marinero! </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description"><br>
+                      Espectacular restaurante de mariscos con un magnífico ambiente. </div>
+                    <div class="projcard-tagbox">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projcard projcard-black">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/LaEstanciaHN?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/La estancia.jpg" />
+                  </a>
+
+                  <div class="projcard-textbox">
+                    <div class="projcard-title">La Estancia</div>
+                    <div class="projcard-subtitle">Ven y gasta todo tu dinero</div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description">Lo nuestro es la calidad, los mejores cortes, el sabor único que dan los años de experiencia y la sazón. </div>
+                    <div class="projcard-tagbox">
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projcard projcard-orange">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/InterContinentalSanPedroSula?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/interconti.png" />
+                  </a>
+                  <div class="projcard-textbox">
+                    <div class="projcard-title"> Interontinental restaurante Sampedrano con Piscina</div>
+                    <div class="projcard-subtitle">Ven y gasta todo tu dinero</div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description"> Asados, ¡¡Parrilladas, Alitas, Hamburguesas y más!!    </div>
+                    <div class="projcard-tagbox">
+                   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="projcard projcard-blue">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/RestauranteNopal?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/nopal.jpg" />
+                  </a>
+                  <div class="projcard-textbox">
+                    <div class="projcard-title"> Restaurante El Nopal</div>
+                    <div class="projcard-subtitle">El lugar perfecto para todas las reuniones familiares. </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description"> Es uno de los mejores lugares para disfrutar de una comida deliciosa, un ambiente increíble y buena musica. <br> </div>
+                    <div class="projcard-tagbox">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projcard projcard-black" >
+                
+                <div class="projcard-innerbox"> 
+            <a href="https://www.facebook.com/garagegrillhn?paipv=0&eav=Afb-fmu_z5DKB6Ep5as1ltuaXJQsVLPNMYbNUo43obOR5GLK08sQxZZXm-Q-Sx64Tw4" target="_blank"><img class="projcard-img"  src="../img/garage gr.jpg"  />
+                    </a>
+                  <div class="projcard-textbox">
+                    
+                    <div class="projcard-title"> Garage Grill</div>
+                    <div class="projcard-subtitle">El lugar perfecto para todas las reuniones familiares. </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description"> Restaurante donde encontraras un ambiente agradable y familiar, tenemos cortes de carne asada.  </div>
+                    <div class="projcard-tagbox">
+                       
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="projcard projcard-red">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/novobistro?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/novo bs.jpg" />
+                  </a>
+                  <div class="projcard-textbox">
+                    <div class="projcard-title"> Novo Bistro</div>
+                    <div class="projcard-subtitle">El lugar perfecto para todas las reuniones familiares. </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description">Somos un nuevo concepto dedicado a brindar el mejor servicio acompañado de Exquisita Gastronomía.  </div>
+                    <div class="projcard-tagbox">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="projcard projcard-customcolor" style="--projcard-color: #F5AF41;">
+                <div class="projcard-innerbox">
+                <a href="https://www.facebook.com/rooftop0501hn/about_profile_transparency?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/rooftop.png" />
+                </a> 
+                  <div class="projcard-textbox">
+                    <div class="projcard-title"> Rooftop501</div>
+                    <div class="projcard-subtitle">  ¡La mejor vista y sabor para que disfrutes!  </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description"> ¡En Rooftop amamos el verano y la comida por eso le ponemos pasion a la cocina! <br> 
+                      Vas a quedar enamorado de la experiencia que solo Rooftop te ofrece </div>
+                    <div class="projcard-tagbox">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projcard projcard-green">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/ketchuphn?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/ketchup.jpg" />
+                    </a>
+                    <div class="projcard-textbox">
+                    <div class="projcard-title"> Ketchup</div>
+                    <div class="projcard-subtitle"> Patio-Jardin-Restaurante  </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description">  ¡Una experiencia de Sabores, Colores y un ambiente Único! <br> </div>
+                    <div class="projcard-tagbox">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projcard projcard-blue">
+                <div class="projcard-innerbox">
+                  <a href="https://www.facebook.com/pages/Chedrani-Restaurant/214454528567239?locale=es_LA" target="_blank"><img class="projcard-img" src="../img/chedrani.jpg" />
+                  </a>
+                  <div class="projcard-textbox">
+                    <div class="projcard-title">  Restaurante Chedrani</div>
+                    <div class="projcard-subtitle">  ¡La mejor vista y sabor para que disfrutes!  </div>
+                    <div class="projcard-bar"></div>
+                    <div class="projcard-description">  Restaurante Chedrani disfrute del cálido ambiente familiar y deportivo, con un servicio atentos.</div>
+                    <div class="projcard-tagbox">
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</section>
+  <footer>
+		<div class="logo">
+		
+
+		<div class="secondary-links">
+			<ul>
+	
+			</ul>
+
+			<ul class="social">
+				
+			</ul>
+		</div>
+	</footer>
+	
